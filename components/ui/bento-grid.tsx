@@ -7,7 +7,7 @@ import Lottie from "react-lottie";
 import { cn } from "@/lib/utils";
 
 import { BackgroundGradientAnimation } from "./GradientBg";
-import animationData from "../../data/confetti.json";
+// import animationData from "../../data/confetti.json";
 import MagicButton from "./MagicButton";
 import GridGlobe from "./GrideGlobe";
 
@@ -51,7 +51,7 @@ export const BentoGridItem = ({
   titleClassName?: string;
   spareImg?: string;
 }) => {
-  const leftLists = ["ReactJS", "Express", "Typescript"];
+  const leftLists = ["ReactJS", "Spring", "Typescript"];
   const rightLists = ["VueJS", "NuxtJS", "GraphQL"];
 
   const [copied, setCopied] = useState(false);
@@ -59,7 +59,7 @@ export const BentoGridItem = ({
   const defaultOptions = {
     loop: copied,
     autoplay: copied,
-    animationData: animationData,
+    animationData: null,
     rendererSettings: {
       preserveAspectRatio: "xMidYMid slice",
     },
